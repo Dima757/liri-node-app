@@ -181,6 +181,6 @@ function selectCommand(command,userArg) {
 }
 
 var command = process.argv[2];
-var userArg = process.argv[3];
+var userArg = process.argv.slice(3).join(" ");
 
 selectCommand(command,userArg);
